@@ -1,0 +1,41 @@
+#MainHome,
+#Status {
+    box-sizing: border-box;
+}
+
+
+/* 기존 스타일 유지 */
+#wrapper {
+    width: 800px;
+    height: 600px;
+    background-color: burlywood;
+    
+    margin: auto;
+}
+
+/* clearfix 추가 */
+#wrapper::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#MainHome {
+    width: 600px;
+    height: 100%;
+    background-image: url("../images/MainPage/Home.jpg");
+    background-size: cover; /* 또는 contain, 100% 100% */
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    border-radius: 3px;
+    float: left;
+}
+
+
+#Status {
+    width: 200px;
+    height: 100%;
+    background-color: rgb(255, 173, 66);
+    float: left;
+}
